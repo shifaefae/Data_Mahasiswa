@@ -30,7 +30,7 @@ public class Mahasiswa {
     }
 
     public JSONObject getMahasiswa() {
-        query = "select * from t_mhs where  angkatan = 2021 and deleted = 0 limit 200";
+        query = "select * from t_mhs where  angkatan = 2023 and deleted = 0 limit 200";
         HttpResponse<String> response = Unirest.post("https://siakad.itmnganjuk.ac.id/api/select")
                 .header("Content-Type", "application/json")
                 .header("Cookie", "siakaditm1=9tfsg2disjg57fk6jvn2ut7g0a")
